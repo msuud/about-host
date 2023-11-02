@@ -9,78 +9,62 @@
   --inputColor: hsl(330, 12%, 97%);
   box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
 }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+body {
+  background-image: url("https://drive.google.com/uc?id=1JrU2Hc7oG0golQcuYWTGRDzF_ltSszGT");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
 
-.about {
-  .secContainer {
-    .title {
-      color: var(--blackColor);
-      line-height: 1.5rem;
-      padding-bottom: 2rem;
-      text-align: center;
-      font-size: 2rem;
-    }
-    .mainContent {
-      gap: 1rem;
-      .singleItem {
-        text-align: center;
+.about .secContainer .title {
+  color: black;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 2.5rem;
+}
+.about .secContainer .mainContent {
+  gap: 1rem;
+}
+.about .secContainer .singleItem {
+  text-align: center; /* Border style */
+  padding: 10px;
+  margin: 60px; /* Padding around the content */
+  background-color: black; /* Background color */
+  margin-bottom: 10px; /* Margin to separate the divs */
+  opacity: 0.8;
+  border-radius: 20px;
+}
 
-        img {
-          background: rgb(247, 144, 54 0.265);
-          width: 100px;
-          border-radius: 50%;
-          padding: 1rem;
-        }
+.about .secContainer .singleItem img {
+  background: rgb(247, 144, 54 0.265);
+  width: 200px;
+  border-radius: 70%;
+  padding: 1rem;
+}
 
-        h3 {
-          font-weight: 700;
-          color: var(--blackColor);
-          padding: 0.5rem;
-        }
+.about .secContainer .singleItem h3 {
+  font-weight: 800;
+  font-size: 23px;
+  color: var(--greyText);
+  padding: 0.5rem;
+}
 
-        p {
-          font-size: 13px;
-          font-weight: 500;
-          padding-bottom: 0.5rem;
-          color: var(--textColor);
-        }
-      }
-    }
-
-    .videoCard {
-      margin-top: 2rem;
-      background: linear-gradient(to);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    .cardContent {
-      gap: 2rem;
-      padding: 2rem 1rem;
-
-      .cardText {
-        h2 {
-          color: var(--whiteColor);
-          opacity: 0.7;
-          font-size: 12px;
-          font-weight: 400;
-          letter-spacing: 1px;
-        }
-      }
-
-      .cardVideo {
-        border: 2px solid var(--whiteColor);
-        height: 200px;
-        width: 100%;
-        border-radius: 10px;
-        overflow: hidden;
-
-        video {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        }
-      }
-    }
-  }
+.about .secContainer .singleItem p {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: var(--inputColor);
 }
