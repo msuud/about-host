@@ -48,7 +48,7 @@
 
     .videoCard {
       margin-top: 2rem;
-      /* background: linear-gradient(to); */
+      background: linear-gradient(to);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
